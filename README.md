@@ -42,8 +42,8 @@ In this script, the robot will go to the marked __pickup zone__, and the __marke
 
 ## Project Description
  
-.Project 5                                        # Project: Home Service Robot   
--catkin_ws                                             # Catkin workspace  
+.Project 5                                        # Project: Home Service Robot     
+├── catkin_ws                                             # Catkin workspace  
 │   ├── src  
 │   │   ├── add_markers                                   # add_markers package          
 │   │   │   ├── launch
