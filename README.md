@@ -40,32 +40,32 @@ By integrating the above functions, a family robot is designed. The name of scri
 
 In this script, the robot will go to the marked __pickup zone__, and the __marker will disappear__ after arriving at the pickup zone. After completing the task, the robot goes to the __dropoff zone__ and __displays the marker__ of the dropoff zone after arriving at the dropoff zone.
 
-.Project 5                                        # Project: Home Service Robot 
-├── catkin_ws                                             # Catkin workspace
-│   ├── src
-│   │   ├── add_markers                                   # add_markers package        
+.Project 5                                        # Project: Home Service Robot   
+-catkin_ws                                             # Catkin workspace  
+│   ├── src  
+│   │   ├── add_markers                                   # add_markers package          
 │   │   │   ├── launch
-│   │   │   │   ├── add_markers.launch   # launch file for add_marker function.
-│   │   │   │   ├── ADD_Markers.launch   # launch file for ADD_Marker function( project function).
-│   │   │   ├── src
-│   │   │   │   ├── add_markers.cpp                       # source code for add_markers
-│   │   │   │   ├──ADD_Markers.cpp                  # source code for ADD_Markers
-│   │   ├── pick_objects                                  # pick_objects package     
-│   │   │   ├── src
-│   │   │   │   ├── pick_objects.cpp                      # source code for pick_objects
-│   │   ├── rvizConfig                                    # rvizConfig package 
-│   │   │   ├── launch
-│   │   │   │   ├── view_navigation.launch   # launch file for rvizConfig of the home service robot
-│   │   │   ├── home_service.rviz              # rvizConfig file for home service robot  
-│   │   ├── scripts                                       # shell scripts files
-│   │   │   ├── add_marker.sh 
-│   │   │   ├── home_service.sh 
-│   │   │   ├── launch.sh                         # test script
-│   │   │   ├── pick_objects.sh
-│   │   │   ├── test_navigation.sh
-│   │   │   ├── test_slam.sh
-│   │   ├── turtlebot                                     # keyboard_teleop.launch file
-│   │   ├── turtlebot_interactions                        # view_navigation.launch file
-│   │   ├── turtlebot_simulator                           # turtlebot_world.launch file       
-│   │   ├── CMakeLists.txt                                # compiler instructions
-├── image                # image file
+│   │   │   │   ├── add_markers.launch   # launch file for add_marker function.  
+│   │   │   │   ├── ADD_Markers.launch   # launch file for ADD_Marker function( project function).    
+│   │   │   ├── src  
+│   │   │   │   ├── add_markers.cpp                       # source code for add_markers  
+│   │   │   │   ├──ADD_Markers.cpp                  # source code for ADD_Markers  
+│   │   ├── pick_objects                                  # pick_objects package       
+│   │   │   ├── src  
+│   │   │   │   ├── pick_objects.cpp                      # source code for pick_objects  
+│   │   ├── rvizConfig                                    # rvizConfig package   
+│   │   │   ├── launch  
+│   │   │   │   ├── view_navigation.launch   # launch file for rvizConfig of the home service robot  
+│   │   │   ├── home_service.rviz              # rvizConfig file for home service robot    
+│   │   ├── scripts                                       # shell scripts files  
+│   │   │   ├── add_marker.sh   
+│   │   │   ├── home_service.sh   
+│   │   │   ├── launch.sh                         # test script  
+│   │   │   ├── pick_objects.sh  
+│   │   │   ├── test_navigation.sh  
+│   │   │   ├── test_slam.sh  
+│   │   ├── turtlebot                                     # keyboard_teleop.launch file  
+│   │   ├── turtlebot_interactions                        # view_navigation.launch file  
+│   │   ├── turtlebot_simulator                           # turtlebot_world.launch file         
+│   │   ├── CMakeLists.txt                                # compiler instructions  
+├── image                # image file  
