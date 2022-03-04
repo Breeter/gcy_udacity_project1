@@ -90,11 +90,9 @@ In navigation packge, you can get a path for your robot based on Dijkstra's algo
 In pick_objects.cpp file, you can set the goal position and publish it.   
 
 This script will produce the following effects:  
-- The robot travels to the first goal position(pickup zone) and displays the arrival message.
--The robot stays for 5 seconds.
--The robot travels to the second goal position(dropoff zone) and displays the arrival message.
-
-
+- The robot travels to the first goal position(pickup zone) and displays the arrival message.  
+- The robot stays for 5 seconds.  
+- The robot travels to the second goal position(dropoff zone) and displays the arrival message.  
 
 
 ## 4. Home Service
@@ -103,7 +101,29 @@ By integrating the above functions, a family robot is designed. The name of scri
 
 ![home_service](https://user-images.githubusercontent.com/69617000/156382076-c6276e4a-2d05-4bac-8ab9-891f8bd7ece6.png)
 
+### (1) Launch  file
+This script consists of the following launch files.   
+**turtlebot_world.launch**  
+**amcl_demo.launch**  
+**view_navigation.laucn**  
+**pick_objects.launch**
+**add_markes.launch**
+
+### (2) Explain
 In this script, the robot will go to the marked __pickup zone__, and the __marker will disappear__ after arriving at the pickup zone. After completing the task, the robot goes to the __dropoff zone__ and __displays the marker__ of the dropoff zone after arriving at the dropoff zone.
+
+Unlike previous pick_objects script, this script adds a add_markers node.   
+add_markers node is used to place markers in the rviz visualizer.
+The placement rules of marks are as follows:  
+-First, by subscribing to amcl_pose topic, we can get the location information about the robot.  
+-Second, Set a marker in the pcikup zone and display it continuously before the robot arrives.  
+-Third, when the robot reaches the pickzone, the mark disappears.    
+-Fourth, when the robot reaches the dropoff zone, a dropoff zone marker is displayed.  
+
+This script combines all the contents of this curriculum and realizes the basic functions of a home cleaning robot.
+
+
+
 
 ## Project Description
  
