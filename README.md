@@ -21,7 +21,7 @@ This script consists of the following launch files.
 ### (2) Explain
 This script can realize localization function.   
 
-First, Via the `roslaunch turtlebot_gazebo turtlebot_world.launch ` command , you can open your world in Gazebo program.   
+First, Via the `roslaunch turtlebot_gazebo turtlebot_world.launch ` command , you can open your world in Gazebo program.     
 *Notice: You should  change the world file link in the  launch file. *
 
 In your world, the robot is in an unknowe position. So, you can use the amcl algorithm to location the position of robot.   
@@ -62,7 +62,7 @@ However, in mapping, we need to get the surrounding environment information thro
 So, you will use gmapping packge through the `roslaunch turtlebot_gazebo gmapping_demo.launch` command.   
 In gmmaping package, you will draw the surrounding environment and localize the robot through GraphSLAM algorithms.  
 This algorithm will estimate the probability of whether there are obstacles in the surrounding area through the data of the sensor and robot motion.   
-As the robot moves, it gradually draws all the maps.
+As the robot moves, it gradually draws all the maps.  
 Notic: *keyboard_teleop.launch* let you can control the robot by your keyboard.   
 
 ## 3. Navigation
